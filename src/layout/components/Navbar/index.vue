@@ -1,11 +1,13 @@
 <template>
   <div class="navbar">
+    <!-- 头部打开关闭菜单按钮 -->
     <hamburger
       id="hamburger-container"
       :is-active="sidebar.opened"
       class="hamburger-container"
       @toggleClick="toggleSideBar"
     />
+    <!-- 顶部面包屑 -->
     <breadcrumb
       id="breadcrumb-container"
       class="breadcrumb-container"

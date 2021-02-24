@@ -12,10 +12,10 @@
         type="primary"
         icon="el-icon-search"
         @click="handleFilter"
-      >{{$t('player.btnFilter')}}</el-button>
+      >{{$t('table.search')}}</el-button>
 
       <!-- 新增按钮 -->
-      <el-button type="success" icon="el-icon-edit" @click="handleCreate">{{$t('player.btnCreate')}}</el-button>
+      <el-button type="success" icon="el-icon-edit" @click="handleCreate">{{$t('table.add')}}</el-button>
     </div>
 
     <!-- 列表 -->

@@ -1,5 +1,10 @@
 export default {
   route: {
+    heroMgt: 'HeroMgt',
+    banPick: 'BanPick',
+    createPlayer: 'CreatePlayer',
+    playerMgt: 'PlayerMgt',
+    playerList: 'PlayerList',
     dashboard: 'Dashboard',
     documentation: 'Documentation',
     guide: 'Guide',

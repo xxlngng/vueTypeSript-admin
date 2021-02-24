@@ -66,8 +66,10 @@ export default class extends Vue {
 
   private pathCompile(path: string) {
     // To solve this problem https://github.com/PanJiaChen/vue-element-admin/issues/561
+    console.log('path', path)
     const { params } = this.$route
     const toPath = pathToRegexp.compile(path)
+    console.log('toPath',toPath)
     return toPath(params)
   }
 

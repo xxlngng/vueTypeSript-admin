@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-  import {Vue, Component} from 'vue-property-decorator'
+  import {Vue, Component, Provide} from 'vue-property-decorator'
   import PlayerDetail from './components/PlayerDetail.vue';
 
   @Component({
@@ -15,7 +15,8 @@
     },
   })
   export default class create extends Vue {
-    
+    @Provide()
+    aaa = '123aa'
   }
 </script>
 

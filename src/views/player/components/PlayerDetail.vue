@@ -23,14 +23,14 @@
       </el-upload>
 
       <el-form-item>
-        <el-button type="primary" @click="submitForm">提交</el-button>
+        <el-button type="primary" @click="submitForm">提交{{aaa}}</el-button>
       </el-form-item>
     </el-form>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop, Ref } from "vue-property-decorator";
+import { Vue, Component, Prop, Ref, Inject } from "vue-property-decorator";
 import {
   defaultPlayerData,
   getPlayer,
@@ -48,6 +48,10 @@ export default class PlayerDetail extends Vue {
 
   @Ref()
   form!: Form;
+
+  @Inject({from: 'aaa', default: '3333'})
+  aaa!: string
+
 
   // 数据模型，默认全为空
   playerForm = Object.assign({}, defaultPlayerData);
